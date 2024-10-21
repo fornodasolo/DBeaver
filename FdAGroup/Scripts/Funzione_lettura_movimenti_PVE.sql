@@ -1,0 +1,40 @@
+DROP FUNCTION SMETSTBND.ISPVEMOV
+
+CREATE FUNCTION SMETSTBND.ISPVEMOV(PARAM1 CHAR(7))
+     RETURNS TABLE
+    (
+        CODICE CHAR(15),
+        SIGLA  CHAR(15),
+        RGPVE  CHAR(30),
+        MAG    CHAR(3),
+        ST     CHAR(2),
+        NDOC   CHAR(15),
+        DDOC   CHAR(8), 
+        DEDO   CHAR(30),
+        NBOL   CHAR(15),
+        DBOL   CHAR(8), 
+        CDVG   CHAR(15), 
+        NRDM   CHAR(10)
+    )
+        LANGUAGE SQL
+		RETURN
+		WITH X AS (SELECT E§NMNE, E§RAGS FROM SMETSTBND.BRENTI0F WHERE E§TRAG='PVE' AND E§CRAG=PARAM1 
+				   AND  E§DINV <= YEAR(CURRENT_DATE)*10000
+		                       + MONTH(CURRENT_DATE)*100
+        		                 + DAY(CURRENT_DATE)
+		           AND  E§DFNV >= YEAR(CURRENT_DATE)*10000
+        		               + MONTH(CURRENT_DATE)*100
+                		         + DAY(CURRENT_DATE) 
+		)  
+		SELECT T§CDCL,
+			   E§NMNE, E§RAGS,
+     		   T§CDMG,T§STAT,T§NDOC,T§DTDO,T§DEDO,T§NBOL,T§DBOL,T§CDVG,T§NRDM 
+		FROM SMETSTBND.V5TDOC0F,X WHERE 
+		  ((T§CDCL = PARAM1) OR (T§CDCC = PARAM1) OR (T§CODS = PARAM1))
+	   ;
+		 
+		 
+SELECT * FROM TABLE(SMETSTBND.ISPVEMOV('0115171')) 
+       
+
+

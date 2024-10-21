@@ -1,0 +1,10 @@
+
+
+SELECT * FROM  SMESYS.B£QQF00F  
+
+WHERE S$DESC LIKE '%Ambienti%'
+
+
+
+
+

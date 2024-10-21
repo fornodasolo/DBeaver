@@ -1,0 +1,48 @@
+
+
+SELECT * FROM SMEDATBND.BRENTI0F 
+WHERE E§DINV < VARCHAR_FORMAT(CURRENT_DATE, 'YYYYMMDD')  AND E§DFNV >= VARCHAR_FORMAT(CURRENT_DATE, 'YYYYMMDD') 
+AND E§TRAG='CLI' AND E§RAGS IN 
+(
+'MACHIERALDO GUSTAVO SPA           ', 
+'Mondoffice S.r.l.                 ', 
+'DR. SCHAR G.M.B.H. SRL            ', 
+'DELIFRANCE ITALIA SRL             ', 
+'SUPER CROISSANT SRL               ', 
+'LIGURIA GEL SRL                   ', 
+'NETTUNO ALIMENTARI S.P.A.         ', 
+'OBERTO SAS DI OBERTO DANIELE & C  ', 
+'CREUZA DE MA SAS DI PEIRANO MARI  ', 
+'S.I.P.A. S.p.A.                   ', 
+'PROTA SNC PASTIFICIO              ', 
+'RINED SRL                         ', 
+'SAN GIORGIO SPA                   ', 
+'CENTRO PETROLI IMPIANTI SRL       ', 
+'MAGRINI & CECI SNC                ', 
+'1 AG SRL (L ANCORA GROUP SRL)     ', 
+'VANDEMOORTELE EUROPE NV,          ', 
+'F.LLI MICHIELAN SRL               ', 
+'BANCA IFIS SPA                    ', 
+'EDNA INTERNATIONAL GMBH           ', 
+'11 ER NAHRUNGSMITTEL GMBH         ', 
+'CNH INDUSTRIAL CAPITAL EUROPE     ', 
+'GESTRO ALBERTO                    ', 
+'LASER INFORMATICA SRL             ', 
+'EUROCOOK SRL SOCIO UNICO          ', 
+'GHIACCIOPURO S.R.L.               ', 
+'I.D.C. SRL                        ', 
+'M.D.L. SRL                        ', 
+'TIM  S.p.A.                       ', 
+'DEFRI SNC                         ', 
+'GOURMAND ITALIA S.R.L.            ', 
+'LIZZI SRL                         ', 
+'PEPINO 1884 SPA                   ', 
+'MAIOLI GIUSEPPE                   ', 
+'MIELE GIOVANNI                    ', 
+'UNOGAS ENERGIA SPA                ', 
+'C.D.C. SRL                        ', 
+'VETROCAR & BUS S.P.A.             ', 
+'FORNO D ASOLO SPA                 ', 
+'UNIPOL ASSICURAZIONI SPA          ', 
+'CASSINI RENATO                    '
+)

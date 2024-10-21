@@ -1,0 +1,556 @@
+{
+	"folders": {
+		"Connessioni": {},
+		"as400(sede)": {
+			"parent": "Connessioni/Da Rete Bindi"
+		},
+		"SQL Servers": {
+			"parent": "Connessioni/Da Rete FdA"
+		},
+		"Da Rete FdA": {
+			"parent": "Connessioni"
+		},
+		"Da Rete Bindi": {
+			"parent": "Connessioni"
+		},
+		"as400(sede)": {
+			"parent": "Connessioni/Da Rete FdA"
+		},
+		"SQL Servers": {
+			"parent": "Connessioni/Da Rete Bindi"
+		},
+		"as400(sipa)": {
+			"parent": "Connessioni/Da Rete Bindi"
+		},
+		"AWS(Ireland)": {
+			"parent": "Connessioni/Da Rete FdA"
+		},
+		"PostgreSQL": {
+			"parent": "Connessioni/Da Rete FdA"
+		},
+		"MySQL": {
+			"parent": "Connessioni/Da Rete FdA"
+		}
+	},
+	"connections": {
+		"db2_iseries-17ddde69b9e-1734866cd3189560": {
+			"provider": "db2_i",
+			"driver": "db2_iseries",
+			"name": "S060619T",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete Bindi/as400(sede)",
+			"configuration": {
+				"host": "10.15.244.30",
+				"url": "jdbc:as400://10.15.244.30;",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"auth-model": "native"
+			}
+		},
+		"microsoft-17e9524ad61-747aaa0504c33853": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "Ax2012Prod",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete Bindi/SQL Servers",
+			"configuration": {
+				"host": "192.168.3.90",
+				"port": "1433",
+				"database": "Ax2012Prod",
+				"url": "jdbc:sqlserver://;serverName=192.168.3.90;databaseName=Ax2012Prod",
+				"configurationType": "MANUAL",
+				"type": "prod",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"microsoft-17e96070f5f-407a0972cde27efc": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "DBTest(Replica)",
+			"description": "Accesso da rete Bindi",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete Bindi/SQL Servers",
+			"configuration": {
+				"host": "192.168.3.42",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.3.42;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"microsoft-17e960b6272-30bb104c4f9023ef": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "SrvAxIF01",
+			"description": "da rete Bindi",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete Bindi/SQL Servers",
+			"configuration": {
+				"host": "192.168.3.105",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.3.105;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"microsoft-17e96848e8d-2139381faefaf758": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "SrvSQL01",
+			"description": "da rete Bindi",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete Bindi/SQL Servers",
+			"configuration": {
+				"host": "192.168.0.33",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.0.33;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"microsoft-17efd5dd294-6e20d4028c002be": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "Ax2012Prod",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "192.168.243.90",
+				"port": "1433",
+				"database": "Ax2012Prod",
+				"url": "jdbc:sqlserver://;serverName=192.168.243.90;databaseName=Ax2012Prod",
+				"configurationType": "MANUAL",
+				"type": "prod",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"microsoft-17efd5f3716-428a3ae0e6c60621": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "DBTest(Replica)",
+			"description": "Accesso da rete Bindi",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "192.168.243.42",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.243.42;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"microsoft-17efd5f37c1-19f051c8a3264024": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "SrvAxIF01",
+			"description": "da rete Bindi",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "192.168.243.105",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.243.105;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"microsoft-17efd5f384a-3d6f44387971bb11": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "SrvSQL01",
+			"description": "da rete Bindi",
+			"save-password": true,
+			"read-only": true,
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "192.168.240.33",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.240.33;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-authentication@": "SQL_SERVER_PASSWORD",
+					"@dbeaver-show-all-schemas@": "false"
+				}
+			}
+		},
+		"db2_iseries-17efd633d0c-2b5282f0e20d21cc": {
+			"provider": "db2_i",
+			"driver": "db2_iseries",
+			"name": "S060619T",
+			"save-password": true,
+			"show-system-objects": true,
+			"folder": "Connessioni/Da Rete FdA/as400(sede)",
+			"configuration": {
+				"host": "192.168.0.30",
+				"url": "jdbc:as400://192.168.0.30;",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"SQLEditor.Folding.enabled": "false",
+				"resultset.confirm.beforeSave": "false",
+				"resultset.datetime.editor": "false"
+			}
+		},
+		"mysql8-17efe812479-3edce3a9023c08bb": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "srvArt",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/MySQL",
+			"configuration": {
+				"host": "192.168.0.28",
+				"port": "3306",
+				"url": "jdbc:mysql://192.168.0.28:3306/",
+				"configurationType": "MANUAL",
+				"home": "/usr/bin",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-17f0d682808-2b8bb85c172cb66e": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "db-test",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/AWS(Ireland)",
+			"configuration": {
+				"host": "db-test.chwtoxwxitob.eu-west-1.rds.amazonaws.com",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://db-test.chwtoxwxitob.eu-west-1.rds.amazonaws.com:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql_client",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-17f0d7d04ce-65f5e9e999b497a2": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "salesforce",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/AWS(Ireland)",
+			"configuration": {
+				"host": "db-test.chwtoxwxitob.eu-west-1.rds.amazonaws.com",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://db-test.chwtoxwxitob.eu-west-1.rds.amazonaws.com:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql_client",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"microsoft-1831737e589-527cc92739f47e5": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "LNXMSSQL",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete Bindi",
+			"configuration": {
+				"host": "10.15.244.10",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=10.15.244.10;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-all-schemas@": "true"
+				},
+				"auth-model": "sqlserver_database"
+			}
+		},
+		"postgres-jdbc-1865ee23009-41e2bbbed8169544": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "postgres",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/PostgreSQL",
+			"configuration": {
+				"host": "db-test.chwtoxwxitob.eu-west-1.rds.amazonaws.com",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://db-test.chwtoxwxitob.eu-west-1.rds.amazonaws.com:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql_client",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native",
+				"handlers": {
+					"postgre_ssl": {
+						"type": "CONFIG",
+						"enabled": true,
+						"save-password": true,
+						"properties": {
+							"ssl.ca.cert": "C:\\Users\\edp\\Downloads\\rds-ca-2019-root.pem",
+							"ssl.method": "CERTIFICATES",
+							"sslMode": "prefer"
+						}
+					}
+				}
+			}
+		},
+		"microsoft-1865ee2ef26-3446ac09c2a7bea2": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "LNXMSSQL",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "192.168.0.10",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.0.10;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-all-schemas@": "true",
+					"sslTrustServerCertificate": "false"
+				},
+				"auth-model": "sqlserver_database"
+			}
+		},
+		"db2_iseries-1869d630d73-102199d0c6225302": {
+			"provider": "db2_i",
+			"driver": "db2_iseries",
+			"name": "ASBINDI(192.168.0.100)",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete Bindi/as400(sipa)",
+			"configuration": {
+				"host": "192.168.0.100",
+				"url": "jdbc:as400://192.168.0.100;",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"translate binary": "true"
+				},
+				"auth-model": "native"
+			}
+		},
+		"microsoft-18d320bfdda-6fff6be64e166668": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "SQLServer GLOBE",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "192.168.0.96",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=192.168.0.96;databaseName=master",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-all-schemas@": "false",
+					"sslTrustServerCertificate": "false"
+				},
+				"auth-model": "sqlserver_database"
+			}
+		},
+		"mysql8-18da3857e2b-5c67ee18e8a6c1df": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "newArt",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/MySQL",
+			"configuration": {
+				"host": "192.168.0.198",
+				"port": "3306",
+				"url": "jdbc:mysql://192.168.0.198:3306/",
+				"configurationType": "MANUAL",
+				"home": "/usr/bin",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"auth-model": "native"
+			}
+		},
+		"microsoft-18e566462a8-29173f5b3593da60": {
+			"provider": "sqlserver",
+			"driver": "microsoft",
+			"name": "master",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "10.68.30.9",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName=10.68.30.9\\LIZZISQL;databaseName=master",
+				"configurationType": "URL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-all-schemas@": "false",
+					"sslTrustServerCertificate": "false"
+				},
+				"auth-model": "sqlserver_database"
+			}
+		},
+		"mysql8-18e7b116d40-4c0eb44071d40e4b": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "guacamoleFDA",
+			"save-password": true,
+			"folder": "Connessioni/Da Rete FdA/MySQL",
+			"configuration": {
+				"host": "192.168.0.162",
+				"port": "3306",
+				"url": "jdbc:mysql://192.168.0.162:3306/",
+				"configurationType": "MANUAL",
+				"home": "/usr/bin",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20000",
+					"rewriteBatchedStatements": "true",
+					"enabledTLSProtocols": "TLSv1,TLSv1.1,TLSv1.2,TLSv1.3",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mssql_jtds_legacy-1912c426da3-3cbfbce2fd0dd8e5": {
+			"provider": "mssql",
+			"driver": "mssql_jtds_legacy",
+			"name": "DB CEPI ",
+			"folder": "Connessioni/Da Rete FdA/SQL Servers",
+			"configuration": {
+				"host": "192.168.0.10",
+				"port": "1433",
+				"database": "cts_db",
+				"url": "jdbc:jtds:sqlserver://192.168.0.10/cts_db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"LANGUAGE": "",
+					"INSTANCE": "SQLEXPRESS"
+				},
+				"provider-properties": {
+					"@dbeaver-show-all-schemas@": "true",
+					"sslTrustServerCertificate": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		},
+		"prod": {
+			"name": "Production",
+			"color": "org.jkiss.dbeaver.color.connectionType.prod.background",
+			"description": "Production database",
+			"auto-commit": false,
+			"confirm-execute": true,
+			"confirm-data-change": true,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 600,
+			"auto-close-connections": true,
+			"close-connections-period": 3600
+		}
+	}
+}
